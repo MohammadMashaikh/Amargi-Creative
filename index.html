@@ -6,6 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       @import url("https://fonts.googleapis.com/css?family=Zain:400,700");
+
+       * {
+        font-family: 'Zain', Helvetica, sans-serif;
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      .animate-fade-in {
+        animation: fade-in 1s ease forwards;
+        opacity: 0;
+        transform: translateY(-1rem);
+      }
+
+      .delay-200 {
+        animation-delay: 200ms;
+      }
+
+      .delay-400 {
+        animation-delay: 400ms;
+      }
+
+      .delay-600 {
+        animation-delay: 600ms;
+      }
+
+      .delay-800 {
+        animation-delay: 800ms;
+      }
+
+      .delay-900 {
+        animation-delay: 900ms;
+      }
+
+      .delay-1000 {
+        animation-delay: 1000ms;
+      }
+
+      .delay-1100 {
+        animation-delay: 1100ms;
+      }
+
+      .delay-1200 {
+        animation-delay: 1200ms;
+      }
+
+      .delay-1300 {
+        animation-delay: 1300ms;
+      }
+
     </style>
    <script src="https://cdn.tailwindcss.com"></script>
     <link href="tailwind.css" rel="stylesheet" />
@@ -16,34 +74,37 @@
       <div class="absolute top-[61px] left-[1903px] w-1.5 h-[300px] bg-white rounded-[3px]"></div>
 
       <!-- Header -->
-      <header class="w-full h-[50px] border-b  shadow-md fixed top-0 left-0 w-full z-50 backdrop-blur-sm shadow-white bg-[#ffffff80]">
+      <header class="w-full h-[50px] border-b shadow-md fixed top-0 left-0 w-full z-50 backdrop-blur-sm shadow-white bg-[#ffffff80]">
         <div class="flex items-center justify-between gap-6 h-full px-[15.62%]">
           <a href="index.html" class="flex items-center">
             <img class="h-[30px] w-auto" alt="Logo" src="https://c.animaapp.com/mh6c4ya47hc4hY/img/logo.png" />
           </a>
 
-          <nav class="flex items-center gap-20">
-            <a href="index.html" class="flex items-center gap-1 [font-family:'Zain',Helvetica] font-normal text-black text-[22px] tracking-[0] leading-[normal] hover:opacity-70 transition-opacity">
+          <nav class="flex items-center gap-16">
+            <a href="index.html" class="flex items-center gap-1 [font-family:'Zain',Helvetica] font-normal text-black text-[18px] tracking-[0] leading-[normal] hover:opacity-70 transition-opacity">
               Home
             </a>
-            <a href="about.html" class="flex items-center gap-1 [font-family:'Zain',Helvetica] font-normal text-black text-[22px] tracking-[0] leading-[normal] hover:opacity-70 transition-opacity">
+            <a href="about.html" class="flex items-center gap-1 [font-family:'Zain',Helvetica] font-normal text-black text-[18px] tracking-[0] leading-[normal] hover:opacity-70 transition-opacity">
               About
             </a>
-            <a href="#" class="flex items-center gap-1 [font-family:'Zain',Helvetica] font-normal text-black text-[22px] tracking-[0] leading-[normal] hover:opacity-70 transition-opacity">
+            <a href="#" class="flex items-center gap-1 [font-family:'Zain',Helvetica] font-normal text-black text-[18px] tracking-[0] leading-[normal] hover:opacity-70 transition-opacity">
               Solutions
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </a>
-            <a href="#" class="flex items-center gap-1 [font-family:'Zain',Helvetica] font-normal text-black text-[22px] tracking-[0] leading-[normal] hover:opacity-70 transition-opacity">
+            <a href="consultaion.html" class="flex items-center gap-1 [font-family:'Zain',Helvetica] font-normal text-black text-[18px] tracking-[0] leading-[normal] hover:opacity-70 transition-opacity">
+              Consultation
+            </a>
+            <a href="creative_studio.html" class="flex items-center gap-1 [font-family:'Zain',Helvetica] font-normal text-black text-[18px] tracking-[0] leading-[normal] hover:opacity-70 transition-opacity">
               Creative Studio
             </a>
-            <a href="#" class="flex items-center gap-1 [font-family:'Zain',Helvetica] font-normal text-black text-[22px] tracking-[0] leading-[normal] hover:opacity-70 transition-opacity">
-              Careers
-            </a>
+            <!-- <a href="#" class="flex items-center gap-1 [font-family:'Zain',Helvetica] font-normal text-black text-[14px] tracking-[0] leading-[normal] hover:opacity-70 transition-opacity">
+               عربي
+            </a> -->
           </nav>
 
-          <button class="bg-[#246396] hover:bg-[#1d5077] rounded-[15px] h-[30px] px-6 [font-family:'Zain',Helvetica] font-bold text-white text-[22px] tracking-[0] leading-[normal] transition-colors">
+          <button class="bg-[#246396] hover:bg-[#1d5077] rounded-[15px] h-[30px] px-6 [font-family:'Zain',Helvetica]  text-white text-[18px] tracking-[0] leading-[normal] transition-colors">
             Contact Us
           </button>
         </div>
@@ -52,15 +113,15 @@
       <!-- Main Content -->
       <section class="flex flex-col w-full items-center gap-[100px] pt-[150px] pb-[120px] px-0 relative overflow-hidden">
         <header class="inline-flex items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-          <div class="relative w-full max-w-[1320px]">
+          <div class="relative w-full max-w-[1320px] animate-fade-in delay-200">
             <h1 class="w-full flex flex-col items-center justify-center [font-family:'Zain',Helvetica] font-normal text-transparent text-[70px] text-center tracking-[0] leading-[70px]">
-              <div>
+              <div class="text-[60px]">
                 <span class="font-bold text-white leading-[0.1px]">by </span>
                 <span class="font-bold text-[#246396] leading-[0.1px]">Innovation</span>
                 <span class="font-bold text-white leading-[0.1px]"> and </span>
                 <span class="font-bold text-[#962424] leading-[0.1px]">Creativity</span>
               </div>
-              <p class="font-light text-white text-[26px] leading-[30px] mt-4">
+              <p class="font-light text-white text-[20px] leading-[30px]">
                 Turning ideas into meaningful digital experiences that blend<br />
                 design, innovation, and technology
               </p>
@@ -68,15 +129,15 @@
           </div>
         </header>
 
-        <div class="inline-flex gap-[100px] flex-[0_0_auto] flex-col items-start relative w-full max-w-[1320px]">
+        <div class="inline-flex gap-[100px] flex-[0_0_auto] flex-col items-start relative w-full max-w-[1320px] animate-fade-in delay-400">
           <!-- Digital Products Section -->
           <section class="flex flex-col w-full items-center gap-[30px] relative flex-[0_0_auto]">
             <div class="flex items-center justify-center gap-2.5 relative w-full flex-[0_0_auto]">
               <div class="relative w-full">
-                <h2 class="w-full flex items-center justify-center blur-[10px] [font-family:'Zain',Helvetica] font-normal text-white text-[50px] text-center tracking-[0] leading-[70px]">
+                <h2 class="w-full flex items-center justify-center blur-[10px] [font-family:'Zain',Helvetica] font-normal text-white text-[40px] text-center tracking-[0] leading-[50px]">
                   Digital Products Built with Innovation and Creativity
                 </h2>
-                <h2 class="absolute top-0 left-0 w-full flex items-center justify-center [font-family:'Zain',Helvetica] font-normal text-white text-[50px] text-center tracking-[0] leading-[70px]">
+                <h2 class="absolute top-0 left-0 w-full flex items-center justify-center [font-family:'Zain',Helvetica] font-normal text-white text-[40px] text-center tracking-[0] leading-[50px]">
                   Digital Products Built with Innovation and Creativity
                 </h2>
               </div>
@@ -88,10 +149,10 @@
                 <div class="p-0 relative w-full">
                   <img class="relative w-full h-[250px] rounded-t-[20px]" alt="Digital Library" src="https://c.animaapp.com/mh6c4ya47hc4hY/img/mask-group.png" />
                   <div class="relative w-full h-[100px] bg-[#ffffff80] rounded-[0px_0px_20px_20px] border-r border-b border-l border-white shadow-[0px_4px_6px_#ffffff40] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-                    <h3 class="absolute top-2 left-[15px] [font-family:'Zain',Helvetica] font-bold text-[#962424] text-3xl tracking-[0] leading-[normal]">
+                    <h3 class="absolute top-2 left-[15px] [font-family:'Zain',Helvetica] font-bold text-[#962424] text-2xl tracking-[0] leading-[normal]">
                       Digital Library
                     </h3>
-                    <p class="absolute top-12 left-[15px] w-[370px] [font-family:'Zain',Helvetica] font-normal text-[#333333] text-lg text-justify tracking-[0] leading-[21px]">
+                    <p class="absolute top-12 left-[15px] w-[370px] [font-family:'Zain',Helvetica] font-normal text-[#333333] text-md text-justify tracking-[0] leading-[21px]">
                       "Organize and host your content in a branded digital space"
                     </p>
                   </div>
@@ -104,10 +165,10 @@
                 <div class="p-0 relative w-full">
                   <img class="relative w-full h-[250px] rounded-t-[20px]" alt="Internal Platform" src="https://c.animaapp.com/mh6c4ya47hc4hY/img/mask-group-1.png" />
                   <div class="relative w-full h-[100px] bg-[#ffffff80] rounded-[0px_0px_20px_20px] border-r border-b border-l border-white shadow-[0px_4px_6px_#ffffff40] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-                    <h3 class="absolute top-2 left-[15px] [font-family:'Zain',Helvetica] font-bold text-[#246396] text-3xl tracking-[0] leading-[normal]">
+                    <h3 class="absolute top-2 left-[15px] [font-family:'Zain',Helvetica] font-bold text-[#246396] text-2xl tracking-[0] leading-[normal]">
                       Internal Platform
                     </h3>
-                    <p class="absolute top-12 left-[15px] w-[370px] [font-family:'Zain',Helvetica] font-normal text-[#333333] text-lg text-justify tracking-[0] leading-[21px]">
+                    <p class="absolute top-12 left-[15px] w-[370px] [font-family:'Zain',Helvetica] font-normal text-[#333333] text-md text-justify tracking-[0] leading-[21px]">
                       "Bring your teams together in one interactive space to communicate, share ideas, and celebrate success"
                     </p>
                   </div>
@@ -117,14 +178,60 @@
             </div>
           </section>
 
+
+
+          <!-- Experts Section -->
+          <section class="flex flex-col items-center w-full py-16 bg-transparent animate-fade-in delay-400">
+            <!-- Heading -->
+            <h2 class="text-white text-[42px] leading-[55px] font-normal text-center [font-family:'Zain',Helvetica] mb-10">
+              Our Experts Ready to Help!
+            </h2>
+
+            <!-- Cards -->
+            <div class="flex flex-wrap justify-center gap-10 max-w-[1240px]">
+              <!-- Card 1 -->
+              <div class="flex flex-col items-center justify-between bg-[#ffffff80] rounded-[20px] border border-white shadow-[0_4px_6px_rgba(255,255,255,0.4)] w-[300px] h-[250px] gap-4 hover:scale-105 transition-transform">
+                <div class="w-[70px] h-[70px]"></div>
+                <h3 class="[font-family:'Zain',Helvetica] font-normal text-[#000000] text-xl text-center mb-2">
+                  Digital Transformation
+                </h3>
+              </div>
+
+
+              <!-- Card 2 -->
+              <div class="flex flex-col items-center justify-between bg-[#ffffff80] rounded-[20px] border border-white shadow-[0_4px_6px_rgba(255,255,255,0.4)] w-[300px] h-[250px]  hover:scale-105 transition-transform">
+                <div class="w-[70px] h-[70px]"></div>
+                <h3 class="[font-family:'Zain',Helvetica] font-normal text-[#000000] text-xl text-center mb-2">
+                  Business Development
+                </h3>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="flex flex-col items-center justify-between bg-[#ffffff80] rounded-[20px] border border-white shadow-[0_4px_6px_rgba(255,255,255,0.4)] w-[300px] h-[250px]  hover:scale-105 transition-transform">
+                <div class="w-[70px] h-[70px]"></div>
+                <h3 class="[font-family:'Zain',Helvetica] font-normal text-[#000000] text-xl text-center mb-2">
+                  Visual Experience
+                </h3>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <button class="mt-10 bg-[#246396] hover:bg-[#1d4f78] text-white text-md px-6 py-1 rounded-full transition-colors [font-family:'Zain',Helvetica]">
+              Read More
+            </button>
+          </section>
+
+
+
+
           <!-- Services Section -->
-          <section class="flex flex-col w-full items-center gap-[30px] relative">
+          <section class="flex flex-col w-full items-center gap-[30px] relative animate-fade-in delay-400">
             <div class="flex items-center justify-center gap-2.5 relative w-full flex-[0_0_auto]">
               <div class="relative w-full">
-                <h2 class="w-full flex items-center justify-center blur-[10px] [font-family:'Zain',Helvetica] font-normal text-white text-[50px] text-center tracking-[0] leading-[70px]">
+                <h2 class="w-full flex items-center justify-center blur-[10px] [font-family:'Zain',Helvetica] font-normal text-white text-[40px] text-center tracking-[0] leading-[50px]">
                   Designing Your Road to Success, Together
                 </h2>
-                <h2 class="absolute top-0 left-0 w-full flex items-center justify-center [font-family:'Zain',Helvetica] font-normal text-white text-[50px] text-center tracking-[0] leading-[70px]">
+                <h2 class="absolute top-0 left-0 w-full flex items-center justify-center [font-family:'Zain',Helvetica] font-normal text-white text-[40px] text-center tracking-[0] leading-[50px]">
                   Designing Your Road to Success, Together
                 </h2>
               </div>
@@ -136,7 +243,7 @@
                 <div class="p-0 relative w-full h-full">
                   <div class="absolute top-[calc(50%-95px)] left-[calc(50%-190px)] w-[380px] h-[190px] bg-[#ffffff80] rounded-[10px] border border-white shadow-[0px_4px_6px_#ffffff40] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]"></div>
                   <div class="absolute w-full h-[21%] top-[59%] flex items-center justify-center [font-family:'Zain',Helvetica] font-normal text-black text-3xl text-center tracking-[0] leading-[normal]">
-                    UI | UX Design
+                    UI | UX Services
                   </div>
                 </div>
               </div>
